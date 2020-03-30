@@ -1,0 +1,16 @@
+
+<nav>
+    <%= link_to ' New patient ' , patients_path %>
+</nav>
+
+<h2> All Patients </h2>
+
+<% @patients.each do |patient| %> 
+    <div> 
+    <td> <%= patient.first_name %>   <%=patient.last_name%> </td>
+    <td> <%= link_to 'Details', patient_path(patient) %> </td>
+      
+        </div> 
+<% end %> 
+
+<%= yield %>
