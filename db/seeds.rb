@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Patient.create(first_name: "Afnan", last_name: "MT", diagnosis:"something to write here :) ")
+Patient.create(first_name: "Huda", last_name: "MT", diagnosis:"something to write here :) ")
+Patient.create(first_name: "Nada", last_name: "MT", diagnosis:"something to write here :) ")
