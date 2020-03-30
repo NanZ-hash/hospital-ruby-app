@@ -1,0 +1,16 @@
+
+<%= form_with model: @patient , local: true do |form| %>
+    <p> 
+    <p> First Name: 
+    <%= form.text_field :first_name %> 
+    </p>
+    <p> Last Name: 
+    <%= form.text_field :last_name %> 
+    </p>
+    <div> Diagnosis: 
+    <%= form.text_field :diagnosis %> 
+    </div>
+    
+
+    <%= form.submit %>
+    <% end %>
