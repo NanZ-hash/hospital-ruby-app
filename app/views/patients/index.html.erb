@@ -9,7 +9,8 @@
     <div> 
     <td> <%= patient.first_name %>   <%=patient.last_name%> </td>
     <td> <%= link_to 'Details', patient_path(patient) %> </td>
-      
+    <td> <%= link_to 'Edit', edit_patient_path(patient) %> </td>
+    <td> <%= link_to 'Delete', patients_path(patient) , method: :delete , data: { confirm: 'Are you sure?' } %> </td>
         </div> 
 <% end %> 
 
