@@ -17,8 +17,6 @@ class PatientsController < ApplicationController
 
     def create
         @patient = Patient.new(patient_params)
-        #:patient is the modle that we difined to save it in the new record 
-        # in the data base ... 
         @patient.save
         redirect_to @patient
     end
@@ -31,12 +29,11 @@ class PatientsController < ApplicationController
 
     end
 
-        def destroy
-            @patient =Patient.find(params[:id])
-            @patient.destroy
-            redirect_to root_path
-        end
-        
+    def destroy
+         @patient =Patient.find(params[:id]).destroy
+            redirect_to patients_path
+    end
+
     private 
     def patient_params
         params.require(:patient).permit(:first_name , :last_name , :diagnosis )
