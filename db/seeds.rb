@@ -6,6 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Patient.create(first_name: "Afnan", last_name: "MT", diagnosis:"something to write here :) ")
-Patient.create(first_name: "Huda", last_name: "MT", diagnosis:"something to write here :) ")
-Patient.create(first_name: "Nada", last_name: "MT", diagnosis:"something to write here :) ")
+Patient.create(first_name: "Afnan", last_name: "MT", diagnosis:"something to write here :) " , doctor_id: 1)
+Patient.create(first_name: "Huda", last_name: "MT", diagnosis:"something to write here :) " , doctor_id: 1)
+Patient.create(first_name: "Nada", last_name: "MT", diagnosis:"something to write here :) ", doctor_id: 2)
+
+Doctor.create(first_name: "Nada", last_name: "MT", zip_code: 2545 , specialty: "string" )
+Doctor.create(first_name: "Huda", last_name: "MT", zip_code: 2545 , specialty: "string" )
+Doctor.create(first_name: "Sara", last_name: "MT", zip_code: 2545 , specialty: "string" )
+Doctor.create(first_name: "Dana", last_name: "MT", zip_code: 2545 , specialty: "string" )

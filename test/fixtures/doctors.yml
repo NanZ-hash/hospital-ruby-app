@@ -3,13 +3,11 @@
 one:
   first_name: MyString
   last_name: MyString
-  zip_cod: 1
+  zip_code: 1
   specialty: MyString
-  patient: one
 
 two:
   first_name: MyString
   last_name: MyString
-  zip_cod: 1
+  zip_code: 1
   specialty: MyString
-  patient: two

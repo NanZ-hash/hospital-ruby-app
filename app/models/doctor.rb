@@ -1,3 +1,3 @@
 class Doctor < ApplicationRecord
-  belongs_to :patient
+    has_many :patients , dependent: :destroy
 end
