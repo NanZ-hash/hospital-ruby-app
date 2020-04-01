@@ -1,0 +1,19 @@
+<h2> Dr. <%= @doctor.first_name%> </h2>
+
+<div>
+ Name: <%= @doctor.first_name%> <%=@doctor.last_name%>
+</div>
+<div>
+Zip Cod: <%= @doctor.zip_code %>
+</div>
+<div>
+specialty: <%= @doctor.specialty %>
+</div>
+<div>
+Patients: 
+</div>
+<% @patients.each do |patient| %>
+<div>
+    <strong> <%= link_to patient.first_name , patient_path(patient) %> <%=patient.last_name %>  </strong>
+</div>
+    <% end %>

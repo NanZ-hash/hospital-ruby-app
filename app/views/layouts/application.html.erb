@@ -5,6 +5,17 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+
+    <nav>
+     <%= link_to 'Home' , root_path %> ||
+    <%= link_to ' New Doctore ' , new_doctor_path %> ||
+    <%= link_to ' New patient ' , patients_new_path %> ||
+   
+    <%= link_to 'patient List' , patients_path %> ||
+    <%= link_to 'doctor List' , doctors_path %> ||
+    </nav>
+
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>

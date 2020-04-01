@@ -1,5 +1,5 @@
 
-<%= form_with model: @patient , local: true do |form| %>
+<%= form_with model: @doctor , local: true do |form| %>
     <p> 
     <p> First Name: 
     <%= form.text_field :first_name %> 
@@ -7,13 +7,12 @@
     <p> Last Name: 
     <%= form.text_field :last_name %> 
     </p>
-    <div> Diagnosis: 
-    <%= form.text_field :diagnosis %> 
+    <div> Zip Cod: 
+    <%= form.text_field :zip_code %> 
     </div>
-     <div> Doctor assigned Id : 
-    <%= form.text_field :doctor_id %> 
+    <div> specialty:
+    <%= form.text_field :specialty %> 
     </div>
-    
 
     <%= form.submit %>
     <% end %>

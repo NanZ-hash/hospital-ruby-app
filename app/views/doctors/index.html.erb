@@ -1,0 +1,14 @@
+
+
+<h2> All doctors </h2>
+
+<% @doctors.each do |doctor| %> 
+    <div> 
+    <td> <%= doctor.first_name %>   <%=doctor.last_name%> </td>
+    <td> <%= link_to 'Details', doctor_path(doctor) %> </td>
+    <td> <%= link_to 'Edit', edit_doctor_path(doctor) %> </td>
+    <td> <a data-confirm="Are you sure you want to delete <%= doctor.first_name %>?" data-method="delete" href="/doctors/<%= doctor.id %>" rel="nofollow"> Delete</a> </td>
+        </div> 
+<% end %> 
+
+<%= yield %>
